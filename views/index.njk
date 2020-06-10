@@ -17,13 +17,13 @@
             <h1>Mais acessadas</h1>
         </hgroup>
         <section class="cards">
-            {% for i in range(0, 5) -%}
+            {% for i in range(0, 6) -%}
                 <div class="food-item">
-                    <img class="image" src="{{item[i].image}}"/>
+                    <img class="image" src="{{items[i].image}}"/>
                     <hgroup>
-                        <h1 class="name">{{item[i].title}}</h1>
+                        <h1 class="name">{{items[i].title}}</h1>
                     </hgroup>
-                    <p class="chef">{{item[i].author}}</p>
+                    <p class="chef">{{items[i].author}}</p>
                 </div>
             {%- endfor %}
         </section>
