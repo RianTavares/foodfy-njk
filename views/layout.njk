@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Foodfy
+        </title>
+
+        <link rel="stylesheet" href="/styles.css"/>
+
+        <meta name="description" content="Um projeto de estudo para o curso launchbase da Rockeatseat"/>
+    </head>
+    <body>
+        <header class="header">
+            <div class="content margin-page">
+                <a href="/">
+                    <img class="content-logo" src="./assets/imgs/logo.png" alt="Logo"/>
+                </a>
+                <nav class="content-nav">
+                    <a href="/about">Sobre</a>
+                    <a href="/recipe">Receitas</a>
+                </nav>
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+
+        <footer>
+            Todos direitos reservados, receitas Foodfy.
+        </footer>
+        <script src="./assets/js/scripts.js"></script>
+    </body>
+</html>
